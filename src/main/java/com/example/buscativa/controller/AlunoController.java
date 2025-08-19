@@ -20,5 +20,15 @@ public class AlunoController {
         return "O aluno " + nome + " foi registrado com sucesso!";
      }
 
+     @GetMapping("/buscar/{matricula}")
+     public String BuscarAluno(@PathVariable String matricula){
+         return"o aluno com a matricula:" +matricula+ "foi encontrado";
+     }
+
+     @DeleteMapping("/excluir/{matricula}")
+     public String ExcluirAluno(@PathVariable String matricula){
+        return"o aluno com a matricula:" +matricula+ "foi excluido do sistema";
+     }
+
 
 }
