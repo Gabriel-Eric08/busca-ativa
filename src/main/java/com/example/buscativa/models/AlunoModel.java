@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-@Table( name = "tb_aluno")
+@Table( name = "tb_alunos")
 @Getter
 @Setter
 @Entity
@@ -27,4 +27,5 @@ public class AlunoModel {
     String Data_Nascimento;
 
 }
+
 
